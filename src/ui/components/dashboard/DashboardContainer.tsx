@@ -8,11 +8,13 @@ import {DashboardAppbar} from "../dashboardAppbar/DashboardAppbar";
 import {routeComponentNames} from "../../router/constants/routeComponentNames";
 import {DashboardSidebar} from "../dashboardSidebar/DashboardSidebar";
 import {DashboardFooter} from "./localComponents/DashboardFooter";
+import {useLocation} from "react-router-dom";
 
 // @ts-ignore
 const useStyles = makeStyles(dashboardStyles);
 export const DashboardContainer = ({moduleList = [], children}: DashboardContainerInterface) => {
     const classes = useStyles();
+    const location = useLocation();
 
     const isMounted = useIsMounted();
 
@@ -32,7 +34,7 @@ export const DashboardContainer = ({moduleList = [], children}: DashboardContain
 
     return (
         <Box className={classes.wrapper}>
-            <DashboardAppbar title={routeComponentNames[window.location.pathname] ?? ""}
+            <DashboardAppbar title={routeComponentNames[location.pathname] ?? ""}
                              openMenuMini={openMenuMini}
                              handleMenuDesktop={handleMiniActive}
                              handleMenuMobile={handleMenuMobile}

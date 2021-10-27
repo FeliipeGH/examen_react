@@ -49,7 +49,7 @@ export const AppRouter = () => {
     }
 
     return (
-        <HashRouter>
+        <HashRouter >
             <Switch>
                 <AuthRoutesContainer path={RouteConstants.AUTH_PAGE} component={AuthRoutes}
                                      isAuthenticated={isAuthenticated}/>

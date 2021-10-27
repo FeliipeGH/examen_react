@@ -10,11 +10,13 @@ import {AuthContainerInterface} from "./interfaces/AuthContainerInterface";
 import {AuthFooter} from "../authFooter/AuthFooter";
 import {routeComponentNames} from "../../router/constants/routeComponentNames";
 import {UIConstants} from "../../constants/UiConstants";
+import {useLocation} from "react-router-dom";
 
 // @ts-ignore
 const useStyles = makeStyles(authContainerStyles);
 export const AuthContainer = ({children}: AuthContainerInterface) => {
     const classes = useStyles();
+    const location = useLocation();
 
     return (
         <Box style={{
@@ -34,7 +36,7 @@ export const AuthContainer = ({children}: AuthContainerInterface) => {
                         <Grid item xs={12} sm={12} md={4}>
                             <Card>
                                 <Typography variant="h5" align="center" className={classes.title}>
-                                    {routeComponentNames[window.location.pathname] ?? ""}
+                                    {routeComponentNames[location.pathname] ?? ""}
                                 </Typography>
                                 {children}
                             </Card>
