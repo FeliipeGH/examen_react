@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/examen_react/static/css/main.8070351a.chunk.css",
+    "main.css": "/examen_react/static/css/main.a3ca2bde.chunk.css",
     "main.js": "/examen_react/static/js/main.efd39eaa.chunk.js",
     "main.js.map": "/examen_react/static/js/main.efd39eaa.chunk.js.map",
     "runtime-main.js": "/examen_react/static/js/runtime-main.3fea9203.js",
@@ -10,7 +10,7 @@
     "static/js/2.feb36cb3.chunk.js.map": "/examen_react/static/js/2.feb36cb3.chunk.js.map",
     "index.html": "/examen_react/index.html",
     "static/css/2.68987f92.chunk.css.map": "/examen_react/static/css/2.68987f92.chunk.css.map",
-    "static/css/main.8070351a.chunk.css.map": "/examen_react/static/css/main.8070351a.chunk.css.map",
+    "static/css/main.a3ca2bde.chunk.css.map": "/examen_react/static/css/main.a3ca2bde.chunk.css.map",
     "static/js/2.feb36cb3.chunk.js.LICENSE.txt": "/examen_react/static/js/2.feb36cb3.chunk.js.LICENSE.txt",
     "static/media/landing.537ceb18.jpg": "/examen_react/static/media/landing.537ceb18.jpg",
     "static/media/logo.13c9e141.png": "/examen_react/static/media/logo.13c9e141.png"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.3fea9203.js",
     "static/css/2.68987f92.chunk.css",
     "static/js/2.feb36cb3.chunk.js",
-    "static/css/main.8070351a.chunk.css",
+    "static/css/main.a3ca2bde.chunk.css",
     "static/js/main.efd39eaa.chunk.js"
   ]
 }
