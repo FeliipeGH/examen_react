@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/examen_react/static/css/main.a3ca2bde.chunk.css",
-    "main.js": "/examen_react/static/js/main.efd39eaa.chunk.js",
-    "main.js.map": "/examen_react/static/js/main.efd39eaa.chunk.js.map",
+    "main.js": "/examen_react/static/js/main.aa8a86ab.chunk.js",
+    "main.js.map": "/examen_react/static/js/main.aa8a86ab.chunk.js.map",
     "runtime-main.js": "/examen_react/static/js/runtime-main.3fea9203.js",
     "runtime-main.js.map": "/examen_react/static/js/runtime-main.3fea9203.js.map",
     "static/css/2.68987f92.chunk.css": "/examen_react/static/css/2.68987f92.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.68987f92.chunk.css",
     "static/js/2.feb36cb3.chunk.js",
     "static/css/main.a3ca2bde.chunk.css",
-    "static/js/main.efd39eaa.chunk.js"
+    "static/js/main.aa8a86ab.chunk.js"
   ]
 }

@@ -3,13 +3,14 @@ import {makeStyles} from "@material-ui/core/styles";
 import {appBarLinksStyle} from "./styles/appBarLinksStyles";
 import {List, ListItem} from "@material-ui/core";
 import {RouteConstants} from "../../router/constants/RouteConstants";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 // @ts-ignore
 const useStyles = makeStyles(appBarLinksStyle);
 
 export const AppBarLinks = () => {
     const classes = useStyles();
+    const location = useLocation();
 
     const navLinkNoSelect = classes.navLink + " " + classes.navLinkHover;
     const navLinkSelect = classes.navLink + " " + classes.navLinkSelected;
@@ -24,8 +25,7 @@ export const AppBarLinks = () => {
             </ListItem>
             <ListItem className={classes.listItem}>
                 <Link to={RouteConstants.LOGIN_PAGE}
-                      className={
-                          window.location.pathname === RouteConstants.LOGIN_PAGE ? navLinkSelect : navLinkNoSelect}
+                      className={location.pathname === RouteConstants.LOGIN_PAGE ? navLinkSelect : navLinkNoSelect}
                 >
                     Acceder
                 </Link>
