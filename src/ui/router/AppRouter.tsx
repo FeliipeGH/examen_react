@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {Redirect, Switch} from "react-router";
 import {useIsMounted} from "../hooks/useIsMounted";
 import {RootState} from "../../store/mainStore";
@@ -49,7 +49,7 @@ export const AppRouter = () => {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <AuthRoutesContainer path={RouteConstants.AUTH_PAGE} component={AuthRoutes}
                                      isAuthenticated={isAuthenticated}/>
@@ -57,6 +57,6 @@ export const AppRouter = () => {
                                           isAuthenticated={isAuthenticated}/>
                 <Redirect to={RouteConstants.AUTH_PAGE}/>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
